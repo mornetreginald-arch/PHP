@@ -85,9 +85,20 @@ for ($i = 1; $i <= 10; $i++) {
 <?php
 $i = 0;
 while ($i <= 20) {
-    $i++;
+    if ($i % 2 === 0) {
+    echo $i . " ";
 }
-if ($i % 2 === 0) {
-    echo $i;
+$i++;
+}
+?>
+
+
+<!-- Exercice 3.3 – Table de multiplication d’un nombre -->
+
+<?php
+$n = 5;
+for ($i = 1; $i <= 10; $i++) {
+    $resultat = $n * $i;
+    echo $n . " " . "x" . " " . $i . " " . "=" . " " . $resultat . "<br>";
 }
 ?>
