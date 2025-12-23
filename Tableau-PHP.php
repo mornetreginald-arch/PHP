@@ -23,6 +23,6 @@ echo $fruits [2];
 <?php
 $fruits = ["pomme","banane", "orange"];
 array_push($fruits, "fraise", "framboise");
-echo [$fruits];
+echo $fruits;
 var_dump($fruits);
 ?>
