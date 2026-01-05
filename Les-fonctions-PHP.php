@@ -46,3 +46,46 @@ function multiplier($a, $b) {
 };
 multiplier(3,4);
 ?>
+<br>
+
+<!-- Exercice 3.1 – Calcul du carré -->
+
+<?php
+function carre($nombre) {
+    return sqrt ($nombre);
+};
+$valeur = carre(10);
+echo "La valeur de 10 est : $valeur";
+?>
+<br>
+
+<!-- Exercice 3.2 – Année de naissance -->
+
+<?php
+function anneeNaissance($age) {
+    $annee = date("2026");
+    return $annee - $age;
+};
+$votreAge = 34;
+$anneeEstime = anneeNaissance($votreAge);
+echo "Si vous avez $votreAge, vous êtes né en $anneeEstime";
+?>
+<br>
+
+<!-- Exercice 4.1 – Majeur ou mineur -->
+
+<?php
+function estMajeur($age) { 
+    if ($age < 18) {
+        echo "Vous êtes mineur";
+        return false;
+        
+    }
+    else {
+        echo "Vous êtes majeur";
+        return true;
+        
+    }
+}
+estMajeur(17);
+?>
