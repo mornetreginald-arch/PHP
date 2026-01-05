@@ -65,3 +65,36 @@ echo $personnes["prenom"] . " " . $personnes["nom"] . " " . "a" . " " . $personn
 ?>
 <br>
 
+<!-- Exercice 2.4 – Ajout de nouvelle entrée -->
+
+<?php
+$personnes = ["nom" => "Durand", "prenom" => "Alice", "age" => "28"];
+$personnes["ville"] = "Paris";
+echo $personnes["prenom"] . " " . $personnes["nom"] . " " . "a" . " " . $personnes["age"] . " " . "ans" . " " . "et" . " " . "habite" . " " . "a" . " " . $personnes["ville"];
+?>
+<br>
+
+<!-- Exercice 3.1 – Liste de prénoms -->
+
+<?php
+$prenoms = ["Alice", "Durand", "Bernard", "Bianca", "Ernest"];
+foreach ($prenoms as $prenom) {
+echo "Bonjour , $prenom !";
+echo "<br>";
+}
+?>
+<br>
+
+<!-- Exercice 3.2 – Afficher une fiche utilisateur -->
+
+<?php
+$utilisateur = ["nom" => "Durand", "prenom" => "Alice", "email" => "durand.alice@exemple.com", "age" => "28"];
+echo "Nom : " . $utilisateur['nom'] . "<br>";
+echo "Prenom : " . $utilisateur['prenom'] . "<br>";
+echo "Email : " . $utilisateur['email'] . "<br>";
+echo "Age : " . $utilisateur['age'] . "<br>";
+?>
+<br>
+
+<!-- Exercice 3.3 – Déboguer un tableau -->
+
