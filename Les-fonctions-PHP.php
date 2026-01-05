@@ -89,3 +89,62 @@ function estMajeur($age) {
 }
 estMajeur(17);
 ?>
+<br>
+
+<!-- Exercice 4.2 – Nombre pair -->
+
+<?php
+function estPair($nombre) {
+    if ($nombre % 2 === 0) {
+        echo "Votre nombre ou chiffre est ";
+        return "Pair";
+    } else {
+        echo "Votre nombre ou chiffre est ";
+        return "Impair";
+    }
+}
+echo estPair(12);
+?>
+<br>
+
+<!-- Exercice 5.1 – Générateur de phrase complète -->
+
+<?php
+function presentation($prenom, $nom, $age) {
+    return "Je m'appelle $prenom $nom et j'ai $age";
+};
+echo presentation("Alain", "Dupont", "32");
+?>
+<br>
+
+<!-- Exercice 5.2 – Calculatrice simple -->
+
+<?php
+function calculer($a, $b, $operation) {
+    if ($operation === "+") {
+        return $a + $b;
+    } elseif ($operation === "-") {
+        return $a - $b;
+    } elseif ($operation === "*") {
+        return $a * $b;
+    } elseif ($operation === "/") {
+        return $a / $b;
+    } else {
+        return "Erreur d'operation";
+    }
+}
+echo calculer(35, 35, "-");
+?>
+<br>
+
+<!-- Exercice 5.3 – Génération de lignes numérotées -->
+
+<?php
+function afficherLignes($n) {
+    for ($i = 1; $i <= $n; $i++) { 
+        echo "Ceci est la ligne numéro $i" . "<br>";
+        
+    }
+}
+afficherLignes(3);
+?>
