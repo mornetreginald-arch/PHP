@@ -98,3 +98,9 @@ echo "Age : " . $utilisateur['age'] . "<br>";
 
 <!-- Exercice 3.3 – Déboguer un tableau -->
 
+<?php
+$livre = ["titre" => "1984", "auteur" => "George Orwell", "annee" => "1949"];
+echo "<pre>";
+var_dump($livre);
+echo "</pre>";
+?>
