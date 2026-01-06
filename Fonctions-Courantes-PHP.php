@@ -79,3 +79,43 @@ if (empty($valeur)) {
 <!-- Exercice 3.2 – Tester si une variable existe -->
 
 <?php
+if (isset($nom)) {
+    echo "La varible est définie";
+} else {
+    echo "La variable n'est pas définie";
+}
+?>
+<br>
+
+<!-- Exercice 3.3 – Forcer un type booléen -->
+
+<?php
+$chainePleine = "Hello";
+$zero         = 0;
+$un           = 1;
+$chaineVide   = "";
+
+echo "<pre>"; 
+
+echo "Chaîne 'Hello' : ";
+var_dump( (bool) $chainePleine );
+
+echo "Le nombre 0    : ";
+var_dump( boolval($zero) );
+
+echo "Le nombre 1    : ";
+var_dump( (bool) $un );
+
+echo "Chaîne vide    : ";
+var_dump( boolval($chaineVide) );
+
+echo "</pre>";
+?>
+<br>
+
+<!-- Exercice 4.1 – Compter les éléments -->
+
+<?php
+$tableau = ["Jerry", "James", "Peter", "Pan", "Alice"];
+echo count($tableau);
+?>
