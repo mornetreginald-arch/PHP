@@ -119,3 +119,42 @@ echo "</pre>";
 $tableau = ["Jerry", "James", "Peter", "Pan", "Alice"];
 echo count($tableau);
 ?>
+<br>
+
+<!-- Exercice 4.2 – Ajouter et supprimer -->
+
+<?php
+$prenom = ["Jerry", "James", "Peter", "Pan", "Alice"];
+array_push($prenom, "Alan");
+echo "<pre>";
+print_r($prenom);
+echo "</pre>";
+
+array_pop($prenom);
+echo "<pre>";
+print_r($prenom);
+echo "</pre>";
+?>
+<br>
+
+<!-- Exercice 4.3 – Trier un tableau -->
+
+<?php
+$prenom = ["Jerry", "James", "Peter", "Pan", "Alice"];
+sort($prenom);
+echo "<pre>";
+print_r($prenom);
+echo "</pre>";
+?>
+<br>
+
+<!-- Exercice 4.4 – Rechercher dans un tableau -->
+
+<?php
+$prenom = ["Jerry", "James", "Peter", "Pan", "Alice"];
+if (in_array("Marie", $prenom)) {
+    echo "Marie se trouve bien dans le tableau";
+} else {
+    echo "Marie ne se trouve pas dans le tableau";
+}
+?>
